@@ -5,6 +5,9 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
-	integrations: [mdx(), sitemap()],
+  image: {
+    domains: ['test-cms-tawny.vercel.app']
+  },
+  site: 'https://test-cms-tawny.vercel.app/',
+  integrations: [mdx(), sitemap()]
 });
